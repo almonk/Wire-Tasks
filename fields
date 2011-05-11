@@ -1,0 +1,7 @@
+#!/usr/bin/php
+<?php
+include("../index.php"); // bootstrap ProcessWire
+
+foreach($fields as $field){
+    echo $field->name . ", ";
+}
