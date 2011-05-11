@@ -2,6 +2,13 @@
 <?php
 include("../index.php"); // bootstrap ProcessWire
 
-foreach($fields as $field){
-    echo $field->name . ", ";
+function listPage($page, $level = 0) {
+        echo str_repeat("    ", $level) . $page->title . " (" . $page->id . "|" . $page->path . ")" . "\n";
+		foreach($page->fields as $field){
+		    echo str_repeat("     ", $level) . "- " . $field->name;
+			echo "\n";
+		}
+		echo "\n";
+        foreach($page->children as $child) listPage($child, $level+1);
 }
+listPage($wire->pages->get("/")); // start at homepage
