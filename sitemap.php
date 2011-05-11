@@ -1,0 +1,8 @@
+#!/usr/bin/php
+<?php
+include("../index.php"); // bootstrap ProcessWire
+function listPage($page, $level = 0) {
+        echo str_repeat("    ", $level) . $page->title . " (" . $page->id . "|" . $page->path . ")" . "\n";
+        foreach($page->children as $child) listPage($child, $level+1);
+}
+listPage($wire->pages->get("/")); // start at homepage
