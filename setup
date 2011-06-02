@@ -6,6 +6,6 @@ mkdir($config->paths->root.'site/assets/sessions');
 mkdir($config->paths->root.'site/assets/cache');
 mkdir($config->paths->root.'site/assets/cache/Page');
 
-echo "✔  Created ".$config->paths->root.'site/assets/sessions';
-echo "✔  Created ".$config->paths->root.'site/assets/cache';
-echo "✔  Created ".$config->paths->root.'site/assets/cache/Page';
+echo "✔  Created ".$config->paths->root.'site/assets/sessions'."\n";
+echo "✔  Created ".$config->paths->root.'site/assets/cache'."\n";
+echo "✔  Created ".$config->paths->root.'site/assets/cache/Page'."\n";
