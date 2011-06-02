@@ -2,7 +2,7 @@
 <?php
 include("../index.php"); // bootstrap ProcessWire
 
-$writable_paths = array($config->paths->root.'site/assets', $config->paths->root.'site/config.php');
+$writable_paths = array($config->paths->root.'site/assets', $config->paths->root.'site/config.php', $config->paths->root.'site/assets/cache', $config->paths->root.'site/assets/sessions');
 
 foreach ($writable_paths as $path)
 {
