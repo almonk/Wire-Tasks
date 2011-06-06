@@ -24,3 +24,8 @@ Outputs the sitemap with ids and paths
 *fields*
 Same as above but lists all the fields used per page
 
+*sitemappaths*
+Outputs the sitemap as a list of slugs
+
+*setup*
+Creates the folders needed for PW to run within assets. If you get weird 503 errors when installing/moving PW, then try running this command.
